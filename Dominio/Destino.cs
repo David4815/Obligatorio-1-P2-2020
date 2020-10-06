@@ -72,7 +72,7 @@ namespace Dominio
                 unaListaDeDestinos.Add(unDestino);
             }
         }
-
+         //agrego un comentario
 
         #region Equals y ToString
         public override bool Equals(object obj)
