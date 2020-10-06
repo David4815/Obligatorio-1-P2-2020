@@ -73,6 +73,7 @@ namespace Dominio
             }
         }
          //agrego un comentario
+         //comentario en rama alternativa
 
         #region Equals y ToString
         public override bool Equals(object obj)
