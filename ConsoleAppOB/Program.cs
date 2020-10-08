@@ -142,7 +142,7 @@ namespace ConsoleAppOB
             DateTime inicio = FunAux.PedirFecha("\nIngrese fecha inicio(dd/mm/aaaa): ", "\nFormato incorrecto, ingrese la fecha en formato dd/mm/aaaa");
             DateTime fin = FunAux.PedirFecha("\nIngrese fecha fin(dd/mm/aaaa): ", "\nFormato incorrecto, ingrese la fecha en formato dd/mm/aaaa");
             int numeroDestino = FunAux.PedirNumero("numero destino. ", "error num dest", 0, 10);
-            List<Excursion> listaBuscada = Sistema.ExcursionesEntre(numeroDestino, inicio, fin, sistemaPrincipal.ListaExcursiones, sistemaPrincipal.ListaDestinos);
+            List<Excursion> listaBuscada = sistemaPrincipal.ExcursionesEntre(numeroDestino, inicio, fin);
             
             if (listaBuscada.Count == 0)
             {

@@ -141,11 +141,11 @@ namespace Dominio
         }
 
         //podria hacer un metodo que devuelva un lista de las excursiones que esten entre esas dos fechas asi no tiene consolewr
-        public static List<Excursion> ExcursionesEntre(int unCodigoDestino, DateTime inicio, DateTime fin, List<Excursion> instanciaSistemaListaExcursiones, List<Destino> instanciaSistemaListaDestinos)
+        public  List<Excursion> ExcursionesEntre(int unCodigoDestino, DateTime inicio, DateTime fin)
         {
             List<Excursion> listaBuscada = new List<Excursion>();
 
-            foreach (Excursion i in instanciaSistemaListaExcursiones)
+            foreach (Excursion i in listaExcursiones)
             {
                 if (i.FechaComienzo > inicio && i.FechaComienzo < fin)
                 {
@@ -153,7 +153,7 @@ namespace Dominio
                     foreach (Destino j in i.ListaDestinosDisponibles)
                     {
 
-                        if (unCodigoDestino - 1 == instanciaSistemaListaDestinos.IndexOf(j))
+                        if (unCodigoDestino - 1 == listaDestinos.IndexOf(j))
                         {
                             listaBuscada.Add(i);
                         }
