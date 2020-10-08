@@ -134,31 +134,7 @@ namespace ConsoleAppOB
 
         }
 
-        //podria hacer un metodo que devuelva un lista de las excursiones que esten entre esas dos fechas asi no tiene consolewr
-        public static List<Excursion> ExcursionesEntre(int unCodigoDestino, DateTime inicio, DateTime fin)
-        {
-            List<Excursion> listaBuscada = new List<Excursion>();
-
-            foreach (Excursion i in sistemaPrincipal.ListaExcursiones)
-            {
-                if (i.FechaComienzo > inicio && i.FechaComienzo < fin)
-                {
-                   
-                    foreach (Destino j in i.ListaDestinosDisponibles)
-                    {
-                        
-                        if(unCodigoDestino - 1 == sistemaPrincipal.ListaDestinos.IndexOf(j))
-                        {
-                            listaBuscada.Add(i);
-                        }
-                    }
-                    
-                }
-
-            }
-
-            return listaBuscada;
-        }
+       
 
         public static void MostrarExcursionesEntre()
         {
@@ -166,7 +142,7 @@ namespace ConsoleAppOB
             DateTime inicio = FunAux.PedirFecha("\nIngrese fecha inicio(dd/mm/aaaa): ", "\nFormato incorrecto, ingrese la fecha en formato dd/mm/aaaa");
             DateTime fin = FunAux.PedirFecha("\nIngrese fecha fin(dd/mm/aaaa): ", "\nFormato incorrecto, ingrese la fecha en formato dd/mm/aaaa");
             int numeroDestino = FunAux.PedirNumero("numero destino. ", "error num dest", 0, 10);
-            List<Excursion> listaBuscada = ExcursionesEntre(numeroDestino, inicio, fin);
+            List<Excursion> listaBuscada = Sistema.ExcursionesEntre(numeroDestino, inicio, fin, sistemaPrincipal.ListaExcursiones, sistemaPrincipal.ListaDestinos);
             
             if (listaBuscada.Count == 0)
             {

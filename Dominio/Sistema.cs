@@ -139,6 +139,32 @@ namespace Dominio
             this.listaExcursiones.Add(Excursion8);
 
         }
+
+        //podria hacer un metodo que devuelva un lista de las excursiones que esten entre esas dos fechas asi no tiene consolewr
+        public static List<Excursion> ExcursionesEntre(int unCodigoDestino, DateTime inicio, DateTime fin, List<Excursion> instanciaSistemaListaExcursiones, List<Destino> instanciaSistemaListaDestinos)
+        {
+            List<Excursion> listaBuscada = new List<Excursion>();
+
+            foreach (Excursion i in instanciaSistemaListaExcursiones)
+            {
+                if (i.FechaComienzo > inicio && i.FechaComienzo < fin)
+                {
+
+                    foreach (Destino j in i.ListaDestinosDisponibles)
+                    {
+
+                        if (unCodigoDestino - 1 == instanciaSistemaListaDestinos.IndexOf(j))
+                        {
+                            listaBuscada.Add(i);
+                        }
+                    }
+
+                }
+
+            }
+
+            return listaBuscada;
+        }
         #endregion
 
 

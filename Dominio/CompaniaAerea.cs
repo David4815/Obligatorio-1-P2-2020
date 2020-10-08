@@ -41,7 +41,7 @@ namespace Dominio
 
         public override string ToString()
         {
-            return $"codigo: {codigo}, Pais: {pais}";
+            return $"codigo: {codigo}, Pais origen de la compania: {pais}";
         }
     }
 }
