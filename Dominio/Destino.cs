@@ -12,12 +12,12 @@ namespace Dominio
         private string ciudad;
         private string pais;
         private int cantidadDias;
-        private int costoActualDiario;
+        private double costoActualDiario;
         
         #endregion
 
         #region Constructor
-        public Destino(string ciudad, string pais, int cantidadDias, int costoActualDiario)
+        public Destino(string ciudad, string pais, int cantidadDias, double costoActualDiario)
         {
             this.ciudad = ciudad;
             this.pais = pais;
@@ -48,7 +48,7 @@ namespace Dominio
         }
 
 
-        public int CostoActualDiario
+        public double CostoActualDiario
         {
             get { return costoActualDiario; }
             set { costoActualDiario = value; }

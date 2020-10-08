@@ -75,7 +75,7 @@ namespace Dominio
 
         #region Metodos
 
-        public void IngresarDestino(string ciudad, string pais, int cantidadDias, int costoActualDiario)
+        public void AgregarDestino(string ciudad, string pais, int cantidadDias, double costoActualDiario)
         {
             Destino unDestino = new Destino(ciudad, pais, cantidadDias, costoActualDiario);
             this.listaDestinos.Add(unDestino);
@@ -83,22 +83,22 @@ namespace Dominio
 
         public void PrecargarDestinos()
         {
-            IngresarDestino("Montevideo", "Uruguay", 3, 120);
-            IngresarDestino("Canelones", "Uruguay", 3, 120);
-            IngresarDestino("Rivera", "Uruguay", 3, 120);
-            IngresarDestino("Buenos Aires", "Argentina", 3, 120);
-            IngresarDestino("Brasilia", "Brasil", 3, 120);
-            IngresarDestino("Cuzco", "Peru", 3, 120);
-            IngresarDestino("Sucre", "Bolivia", 3, 120);
-            IngresarDestino("Santiago de Chile", "Chile", 3, 120);
-            IngresarDestino("Hanoi", "Vietnam", 3, 120);
-            IngresarDestino("Canberra", "Australia", 3, 120);
+            AgregarDestino("Montevideo", "Uruguay", 3, 120);
+            AgregarDestino("Canelones", "Uruguay", 3, 120);
+            AgregarDestino("Rivera", "Uruguay", 3, 120);
+            AgregarDestino("Buenos Aires", "Argentina", 3, 120);
+            AgregarDestino("Brasilia", "Brasil", 3, 120);
+            AgregarDestino("Cuzco", "Peru", 3, 120);
+            AgregarDestino("Sucre", "Bolivia", 3, 120);
+            AgregarDestino("Santiago de Chile", "Chile", 3, 120);
+            AgregarDestino("Hanoi", "Vietnam", 3, 120);
+            AgregarDestino("Canberra", "Australia", 3, 120);
         }
 
-        public void IngresarExcursionNacional(string descripcion, DateTime fechaComienzo, int cantidadDias, int stock, bool interesNacional)
-        {
-            ExcursionNacional unaExursion = new ExcursionNacional(descripcion, fechaComienzo, cantidadDias, stock, interesNacional);
-        }
+        //public void IngresarExcursionNacional(string descripcion, DateTime fechaComienzo, int cantidadDias, int stock, bool interesNacional)
+        //{
+        //    ExcursionNacional unaExursion = new ExcursionNacional(descripcion, fechaComienzo, cantidadDias, stock, interesNacional);
+        //}
 
         public void PrecargarExcursiones()
         {

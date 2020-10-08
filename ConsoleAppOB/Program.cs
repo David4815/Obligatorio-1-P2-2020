@@ -71,7 +71,7 @@ namespace ConsoleAppOB
         }
 
         #region Metodos
-        public static void AgregarDestino()
+        public static void IngresarDestino()
         {
             Console.WriteLine("\nINGRESO DE DESTINO:\n");
 
@@ -89,9 +89,9 @@ namespace ConsoleAppOB
             }
             int cantidadDias = FunAux.PedirNumeroMayor("\nIngrese cantidad de dias en el distino", "Ingrese un numero mayor a cero", 0);
 
-            int costoActual = FunAux.PedirNumeroMayor("\nIngrese costo actual diario", "Ingrese un numero mayor a cero", 0);
+            double costoActual = FunAux.PedirNumeroDoubleMayor("\nIngrese costo actual diario", "Ingrese un numero mayor a cero", 0);
 
-            sistemaPrincipal.IngresarDestino(ciudad, pais, cantidadDias, costoActual);
+            sistemaPrincipal.AgregarDestino(ciudad, pais, cantidadDias, costoActual);
 
             Console.WriteLine("\nDestino ingresado correctamente\n");
             Console.WriteLine($"Destio ingresado: \n\n{sistemaPrincipal.ListaDestinos.Last()}\n");
