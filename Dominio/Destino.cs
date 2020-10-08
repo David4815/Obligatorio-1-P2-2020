@@ -65,13 +65,13 @@ namespace Dominio
               
         //}
 
-        public void AgregarDestino(Destino unDestino, List<Object> unaListaDeDestinos)
-        {
-            if (unDestino.pais.Length >= 3 && unDestino.ciudad.Length >= 3 && unDestino.cantidadDias > 0 && unDestino.CostoActualDiario > 0)
-            {
-                unaListaDeDestinos.Add(unDestino);
-            }
-        }
+        //public void AgregarDestino(Destino unDestino, List<Object> unaListaDeDestinos)
+        //{
+        //    if (unDestino.pais.Length >= 3 && unDestino.ciudad.Length >= 3 && unDestino.cantidadDias > 0 && unDestino.CostoActualDiario > 0)
+        //    {
+        //        unaListaDeDestinos.Add(unDestino);
+        //    }
+        //}
          //agrego un comentario
          //comentario en rama alternativa
 
