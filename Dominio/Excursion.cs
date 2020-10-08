@@ -70,7 +70,7 @@ namespace Dominio
         public override string ToString()
         {
             //calculo costo total
-            int costoTotal=0;
+            double costoTotal=0;
             string destinosDisponibles = "";
             foreach (Destino i in this.ListaDestinosDisponibles)
             {
