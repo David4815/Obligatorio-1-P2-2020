@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    public class Excursion
+    public abstract class Excursion
     {
 
         protected static int ultimoCodigo = 1000;
