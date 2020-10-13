@@ -97,13 +97,13 @@ namespace Dominio
 
         public void AgregarExcursionNacional(string descripcion, DateTime fechaComienzo, int cantidadDias, int stock, bool interesNacional)
         {
-            ExcursionNacional unaExursion = new ExcursionNacional(descripcion, fechaComienzo, cantidadDias, stock, interesNacional);
+            Excursion unaExursion = new ExcursionNacional(descripcion, fechaComienzo, cantidadDias, stock, interesNacional);
             listaExcursiones.Add(unaExursion);
         }
 
         public void AgregarExcursionInternacional(string descripcion, DateTime fechaComienzo, int cantidadDias, int stock, CompaniaAerea unaCompaniaAerea)
         {
-            ExcursionInternacional unaExursionInternacional = new ExcursionInternacional(descripcion, fechaComienzo, cantidadDias, stock, unaCompaniaAerea);
+            Excursion unaExursionInternacional = new ExcursionInternacional(descripcion, fechaComienzo, cantidadDias, stock, unaCompaniaAerea);
             listaExcursiones.Add(unaExursionInternacional);
         }
         public void AgregarCompaniaAerea(int codigo, string paisCompania)
