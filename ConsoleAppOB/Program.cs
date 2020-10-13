@@ -36,7 +36,7 @@ namespace ConsoleAppOB
                 switch (numero)
                 {
                     case 1:
-                        AgregarDestino();
+                        IngresarDestino();
                         break;
 
                     case 2:
