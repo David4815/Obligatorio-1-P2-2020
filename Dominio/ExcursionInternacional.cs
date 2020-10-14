@@ -13,7 +13,7 @@ namespace Dominio
         #endregion
 
 
-        //CompaniaAerea Aerea tiene set y get esta ok eso
+        
         #region Constructor       
         public ExcursionInternacional(string descripcion, DateTime fehcaComienzo, int cantidadDias, int stock, CompaniaAerea companiaAerea) : base(descripcion, fehcaComienzo, cantidadDias, stock)
         {

@@ -55,25 +55,7 @@ namespace Dominio
         }
         #endregion
 
-
-        //public void IngresarDestino(List<Object> unaListaDeDestinos)
-        //{
-        //    if(this.pais.Length>=3 && this.ciudad.Length >= 3 && this.cantidadDias>0 && this.costoActualDiario > 0)
-        //    {
-        //        unaListaDeDestinos.Add(this);
-        //    }
-              
-        //}
-
-        //public void AgregarDestino(Destino unDestino, List<Object> unaListaDeDestinos)
-        //{
-        //    if (unDestino.pais.Length >= 3 && unDestino.ciudad.Length >= 3 && unDestino.cantidadDias > 0 && unDestino.CostoActualDiario > 0)
-        //    {
-        //        unaListaDeDestinos.Add(unDestino);
-        //    }
-        //}
-         //agrego un comentario
-         //comentario en rama alternativa
+        
 
         #region Equals y ToString
         public override bool Equals(object obj)
