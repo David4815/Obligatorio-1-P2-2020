@@ -86,7 +86,7 @@ namespace Dominio
             AgregarDestino("Montevideo", "Uruguay", 3, 120);
             AgregarDestino("Canelones", "Uruguay", 3, 120);
             AgregarDestino("Rivera", "Uruguay", 3, 120);
-            AgregarDestino("Buenos Aires", "Argentina", 3, 120);
+            AgregarDestino("Paysandu", "Uruguay", 3, 120);
             AgregarDestino("Brasilia", "Brasil", 3, 120);
             AgregarDestino("Cuzco", "Peru", 3, 120);
             AgregarDestino("Sucre", "Bolivia", 3, 120);
@@ -125,16 +125,16 @@ namespace Dominio
             listaExcursiones[0].ListaDestinosDisponibles.Add(listaDestinos[1]);
 
             AgregarExcursionNacional("una descripcion", new DateTime(2020, 09, 26), 5, 20, true);
+            listaExcursiones[1].ListaDestinosDisponibles.Add(listaDestinos[1]);
             listaExcursiones[1].ListaDestinosDisponibles.Add(listaDestinos[2]);
-            listaExcursiones[1].ListaDestinosDisponibles.Add(listaDestinos[3]);
             
             AgregarExcursionNacional("una descripcion", new DateTime(2020, 09, 26), 5, 20, true);
-            listaExcursiones[2].ListaDestinosDisponibles.Add(listaDestinos[3]);
-            listaExcursiones[2].ListaDestinosDisponibles.Add(listaDestinos[4]);
+            listaExcursiones[2].ListaDestinosDisponibles.Add(listaDestinos[0]);
+            listaExcursiones[2].ListaDestinosDisponibles.Add(listaDestinos[2]);
             
             AgregarExcursionNacional("una descripcion", new DateTime(2020, 09, 26), 5, 20, true);
-            listaExcursiones[3].ListaDestinosDisponibles.Add(listaDestinos[5]);
-            listaExcursiones[3].ListaDestinosDisponibles.Add(listaDestinos[6]);
+            listaExcursiones[3].ListaDestinosDisponibles.Add(listaDestinos[1]);
+            listaExcursiones[3].ListaDestinosDisponibles.Add(listaDestinos[3]);
 
             //Agrego excursiones internacionales
 
@@ -144,13 +144,13 @@ namespace Dominio
 
             AgregarExcursionInternacional("una descripcion", new DateTime(2020, 09, 20), 5, 20, unaCompaniaAerea);
             listaExcursiones[5].ListaDestinosDisponibles.Add(listaDestinos[9]);
-            listaExcursiones[5].ListaDestinosDisponibles.Add(listaDestinos[1]);
+            listaExcursiones[5].ListaDestinosDisponibles.Add(listaDestinos[4]);
             AgregarExcursionInternacional("una descripcion", new DateTime(2020, 09, 26), 5, 20, unaCompaniaAerea);
             listaExcursiones[6].ListaDestinosDisponibles.Add(listaDestinos[8]);
-            listaExcursiones[6].ListaDestinosDisponibles.Add(listaDestinos[1]);
+            listaExcursiones[6].ListaDestinosDisponibles.Add(listaDestinos[5]);
             AgregarExcursionInternacional("una descripcion", new DateTime(2020, 09, 26), 5, 20, unaCompaniaAerea);
             listaExcursiones[7].ListaDestinosDisponibles.Add(listaDestinos[7]);
-            listaExcursiones[7].ListaDestinosDisponibles.Add(listaDestinos[1]);
+            listaExcursiones[7].ListaDestinosDisponibles.Add(listaDestinos[6]);
 
             
           
