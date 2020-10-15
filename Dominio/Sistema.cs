@@ -164,7 +164,7 @@ namespace Dominio
 
             foreach (Excursion i in listaExcursiones)
             {
-                if (i.FechaComienzo > inicio && i.FechaComienzo < fin)
+                if (i.FechaComienzo >= inicio && i.FechaComienzo <= fin)
                 {
 
                     foreach (Destino j in i.ListaDestinosDisponibles)
